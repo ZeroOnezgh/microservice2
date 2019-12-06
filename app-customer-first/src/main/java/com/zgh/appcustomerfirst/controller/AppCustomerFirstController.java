@@ -18,4 +18,9 @@ public class AppCustomerFirstController {
     public String test() {
         return appCustomerFirstServer.test();
     }
+
+    @RequestMapping(value="/user/login",method=RequestMethod.GET)
+    public String test1(){
+        return "这是一个测试，恭喜小姐姐路由转发成功！";
+    }
 }
